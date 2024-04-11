@@ -5,9 +5,9 @@
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@fontsource/titillium-web": "^5.0.18",
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
-    "@fontsource/titillium-web": "^5.0.18",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.5.2",
@@ -35,7 +35,9 @@
     "test": "jest --passWithNoTests",
     "format": "npx prettier . --write",
     "prepare": "husky",
-    "prettier:check:ci": "prettier --check \"**/*.{ts,tsx,js,md,mdx,css,yaml}\""
+    "prettier:check:ci": "prettier --check \"**/*.{ts,tsx,js,md,mdx,css,yaml}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +60,7 @@
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.23.3",
     "@types/react-datepicker": "^6.0.0",
+    "gh-pages": "^6.1.1",
     "husky": "^9.0.10",
     "jest-mock-fetch": "^2.0.5",
     "lint-staged": "^15.2.2",

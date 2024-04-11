@@ -12,4 +12,5 @@ export default {
   moduleFileExtensions: ["ts", "tsx", "js", "json"],
   testEnvironment: "jsdom",
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
+  base: "/MarsMission/",
 };

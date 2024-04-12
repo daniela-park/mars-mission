@@ -1,6 +1,7 @@
 export default {
   globals: {
     fetch: global.fetch,
+    base: "/MarsMission/",
   },
   transform: {
     ".(ts|tsx)": "ts-jest",
@@ -12,5 +13,4 @@ export default {
   moduleFileExtensions: ["ts", "tsx", "js", "json"],
   testEnvironment: "jsdom",
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
-  base: "/MarsMission/",
 };

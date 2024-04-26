@@ -19,11 +19,11 @@ const NavBar = () => {
     <>
       <header className="header">
         <nav
-          className={`navbar ${location.pathname === "/" ? "collapsed" : ""}`}
+          className={`navbar ${location.pathname === "/mars-mission" ? "collapsed" : ""}`}
         >
           <ul className={`nav-menu ${showMenu ? "active" : ""}`}>
             <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={closeMenuOnMobile}>
+              <Link className="nav-link" to="/mars-mission" onClick={closeMenuOnMobile}>
                 Home
               </Link>
             </li>

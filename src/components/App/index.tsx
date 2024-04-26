@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <NavBar />
       <div className="padded-container">
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/mars-mission" element={<LandingPage />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/marsrover" element={<MarsRoverPage />} />
           <Route path="/womeninspace" element={<WomenInSpace />} />

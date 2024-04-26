@@ -1,6 +1,7 @@
 {
   "name": "mars-mission",
   "version": "0.1.0",
+  "homepage": "https://daniela-park.github.io/mars-mission",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -30,14 +31,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --passWithNoTests",
     "format": "npx prettier . --write",
     "prepare": "husky",
-    "prettier:check:ci": "prettier --check \"**/*.{ts,tsx,js,md,mdx,css,yaml}\"",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "prettier:check:ci": "prettier --check \"**/*.{ts,tsx,js,md,mdx,css,yaml}\""
   },
   "eslintConfig": {
     "extends": [
